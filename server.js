@@ -8,11 +8,6 @@ const path = require('node:path')
 const app = express();
 app.use(express.json())
 
-//Default Home Page
-app.get('/home', (req,res)=>{
-    res.send('Welcome')
-})
-
 //Routing
 const Signup = require('./routes/Signup')
 const User = require('./routes/User')
@@ -43,7 +38,7 @@ app.use(cookieParser())
 
 //Server Production 
 if("production"==="production"){
-    app.use(express.static(path.join("../client/build")));
+    app.use(express.static(path.join("./client/build")));
     app.get("*",(req,res)=>{
         res.sendFile(path.resolve(__dirname,'client', 'build','index.html'))
     })
