@@ -1,0 +1,52 @@
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    height: 6rem;
+}
+.logo{
+    margin: auto 1rem;
+}
+.logoImage{
+    width: 3.5rem;
+}
+.navigation{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+.list{
+    margin: auto 2rem;
+    font-size: 1.8rem;
+    
+}
+.a{
+    text-decoration: none;
+    opacity: 0.7;
+}
+.a:hover{
+    opacity: 1;
+    color: rgb(0, 123, 255) ;
+    transition: all 450ms;
+}
+.button{
+    display: block;
+    width: 7rem;
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    background-color: #b46710;
+    text-decoration: none;
+}
+.button:hover{
+    
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgb(0, 123, 255);
+    transition: all 450ms;
+}
+@media only screen and (max-with:320px){
+    
+}

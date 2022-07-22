@@ -1,0 +1,41 @@
+.bookmarkcont{
+    margin: 0rem 2rem;
+    margin-bottom: 3rem;
+    width: 20rem;
+    background: #1F2735;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.heading{
+    background: none;
+    margin: 0rem 0rem;
+    margin-bottom: 1.2rem;
+}
+.bookmarked{
+    display: block;
+    background-color:  #45474E;
+    font-size: 18px;
+    width: 15rem;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 0.8rem;
+}
+.noData{
+    font-size: 1.5rem;
+   background: none;
+    text-align: center;
+    margin-top: 2.5rem;
+    color: rgb(151, 151, 151);
+    
+}
+.loading{
+    
+    margin: 15rem auto;
+    display: flex;
+    
+    justify-content: center;
+}
+.loading> h2{
+    margin-left: 1rem;
+}
