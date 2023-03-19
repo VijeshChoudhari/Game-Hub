@@ -31,7 +31,7 @@ app.use(cookieParser())
 
 //Database Connection
 
-    mongoose.connect("mongodb+srv://KAV:KAV123456@cluster0.vuoad.mongodb.net/KAV?retryWrites=true&w=majority", { useNewUrlParser: true } , ()=>{
+    mongoose.connect("process.env.DBCONNECTION", { useNewUrlParser: true } , ()=>{
         console.log('connected to db')
     })
 
@@ -45,4 +45,4 @@ if("production"==="production"){
 }
 
 //Listening server on port 5000
-app.listen(5000); 
+app.listen(5000);
